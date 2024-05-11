@@ -554,17 +554,17 @@
   </li>
   
   <li>
-    <h3>Backend (Node.js)</h3>
+    <h4>Backend (Node.js)</h4>
     <p>The backend is implemented using Node.js, a runtime environment that enables server-side JavaScript execution. It acts as the intermediary between the frontend and the database, handling user requests, processing data, and communicating with external services.</p>
   </li>
   
   <li>
-    <h3>Database (MongoDB)</h3>
+    <h4>Database (MongoDB)</h4>
     <p>MongoDB is utilized as the primary database management system for storing and managing user information. It offers flexibility and scalability, making it suitable for handling various types of data, including user profiles, preferences, and other relevant details.</p>
   </li>
   
   <li>
-    <h3>AI Model (LLM - Large Language Model)</h3>
+    <h4>AI Model (LLM - Large Language Model)</h4>
     <p>The AI component utilizes a Large Language Model (LLM) to answer general questions posed by users. This model is trained on a vast amount of text data and is capable of understanding and generating human-like responses to a wide range of inquiries.</p>
   </li>
 </ol>
@@ -572,43 +572,21 @@
           </section>
 
 
-          <section class="docs-section" id="item-2-1-1">
-            <h2 class="section-heading">Section Item 2.1.1</h2>
-            <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo.
-              Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum
-              imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies
-              porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin
-              est. Vestibulum ultricies malesuada tempor.</p>
-          </section>
-
-
-          <section class="docs-section" id="item-2-1-2">
-            <h2 class="section-heading">Section Item 2.1.2</h2>
-            <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo.
-              Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum
-              imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies
-              porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin
-              est. Vestibulum ultricies malesuada tempor.</p>
-          </section>
-
-
-          <section class="docs-section" id="item-2-1-3">
-            <h2 class="section-heading">Section Item 2.1.3</h2>
-            <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo.
-              Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum
-              imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies
-              porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin
-              est. Vestibulum ultricies malesuada tempor.</p>
-          </section>
-
-
           <section class="docs-section" id="item-2-2">
-            <h2 class="section-heading">Section Item 2.2</h2>
-            <p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo.
-              Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum
-              imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies
-              porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin
-              est. Vestibulum ultricies malesuada tempor.</p>
+            <h2 class="section-heading">Workflow</h2>
+            <ol>
+  <li><strong>User Interaction</strong>: Users interact with the ChatBot through the frontend interface, typing messages or questions.</li>
+  <li><strong>Message Processing</strong>: The frontend sends user messages to the backend for processing.</li>
+  <li><strong>Intent Detection</strong>: The backend analyzes the user's message to determine its intent - whether it's a general question or a request for personal information.</li>
+  <li><strong>Data Retrieval</strong>:
+    <ul>
+      <li>If the user's query pertains to general information, the backend queries the AI model to generate an appropriate response.</li>
+      <li>If the user's query involves personal information, the backend retrieves the relevant data from the MongoDB database.</li>
+    </ul>
+  </li>
+  <li><strong>Response Generation</strong>: Based on the intent and retrieved data, the backend generates a response to the user's query.</li>
+  <li><strong>Response Rendering</strong>: The response is sent back to the frontend, where it is displayed to the user within the ChatBot interface.</li>
+</ol>
           </section>
 
 
